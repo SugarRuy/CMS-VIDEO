@@ -1,0 +1,4 @@
+output_fns.php : go_to_no_login_page() 用户未登录
+login.php : go_to_error_page();用户密码错误
+excute_upload.php: go_to_no_login_page()用户未登录
+		go_to_not_enough_post_page();表单未填写完成
