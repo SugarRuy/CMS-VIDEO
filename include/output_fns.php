@@ -12,7 +12,7 @@ function do_html_title($title)
 		<link rel="shortcut icon" href="img/favicon.png">
     	<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" href="style/bootstrap.min.css">
-		<link rel="stylesheet" href="index_files/font-awesome.min.css">
+		<link rel="stylesheet" href="style/font-awesome/4.3.0/css/font-awesome.min.css">
 		<link rel="stylesheet" href="style/icon.css">
 		<link rel="stylesheet" href="style/loader.css">
 		<link rel="stylesheet" href="style/idangerous.swiper.css">
@@ -91,9 +91,9 @@ function do_html_nologin_header()
 				<div class="login-header-block">
 					<div class="login_block">
 
-				<a class="be-register btn color-3 size-1 hover-6" style="margin:5px;"><i class="fa fa-lock"></i>sign up now</a>
+				<a class="be-register btn color-3 size-1 hover-6" style="margin:5px;"><i class="fa fa-lock"></i>注册</a>
 						<a class="btn-login btn color-1 size-2 hover-2" href="#"><i class="fa fa-user"></i>
-						Log in</a>
+						登录</a>
 					</div>	
 				</div>
 			</div>
@@ -110,14 +110,14 @@ function do_html_nologin_header()
 					<div class="row">
 						<div class="col-md-12">
 							<i class="fa fa-times close-button"></i>
-							<h5 class="large-popup-title">Log in</h5>
+							<h5 class="large-popup-title">登录</h5>
 						</div>
 						<form action="./login.php" class="popup-input-search" method="post">
 						<div class="col-md-6">
-							<input name="username" class="input-signtype" type="text" required placeholder="Username">
+							<input name="username" class="input-signtype" type="text" required placeholder="用户名">
 						</div>
 						<div class="col-md-6">
-							<input name="password" class="input-signtype" type="password" required placeholder="Password">
+							<input name="password" class="input-signtype" type="password" required placeholder="密码">
 						</div>
 						<div class="col-xs-6">
 							<div class="be-checkbox">
@@ -125,14 +125,14 @@ function do_html_nologin_header()
 								    <input name="stay_sign" class="checkbox-input" type="checkbox" value=""> <span class="check-box-sign"></span>
 								</label>
 								<span class="large-popup-text">
-									Stay signed in
+									记住密码
 								</span>
 							</div>
 							
-							<a href="video-detail-2.php" class="link-large-popup">Forgot password?</a>
+						<!--	<a href="video-detail-2.php" class="link-large-popup">Forgot password?</a>-->
 						</div>
 						<div class="col-xs-6 for-signin">
-							<input name="l_submit" type="submit" class="be-popup-sign-button" value="SIGN IN">
+							<input name="l_submit" type="submit" class="be-popup-sign-button" value="登录">
 						</div>
 						</form>
 					</div>
@@ -162,7 +162,7 @@ function do_html_nologin_header()
 							<input name="r_re_password" class="input-signtype" type="text" required placeholder="重复密码">
 						</div>				 
 						<div class="col-md-6 for-signin">
-							<input name="r_submit" type="submit" class="be-popup-sign-button" value="SIGN IN">
+							<input name="r_submit" type="submit" class="be-popup-sign-button" value="注册">
 						</div>
 						</form>
 					</div>
@@ -247,7 +247,7 @@ function do_html_content_block_index()
 			<div class="row">
 				<div class="col-md-2 left-feild">
 					<form action="./search.php" class="input-search" method="GET">
-						<input name="keyword" type="text" required placeholder="Enter keyword">
+						<input name="keyword" type="text" required placeholder="输入关键字">
 							<i class="fa fa-search"></i>
 							<input name="search_submit" type="submit" value="">
 					</form>				
@@ -262,7 +262,7 @@ function do_html_content_block_index()
 				<div class="col-md-2 left-feild">
 					<div class="be-vidget hidden-xs hidden-sm affix" id="scrollspy">
 						<h3 class="letf-menu-article">
-							<br />Navigation
+							<br />导航栏
 						</h3>
 						<div class="creative_filds_block">
 							<div class="ul">
@@ -300,7 +300,7 @@ function do_html_col_md_10()
 				<div class="col-md-10">
 
 					<div class="s_keywords" id ="film">
-					<div class="be-large-post-align"><div class="info-block-right"><a href="more.php?videotype=1"><h3 class="info-block-label" style="font-family:Microsoft YaHei !important; ">more>></h3></a></div><h3 class="info-block-label" style="font-family:Microsoft YaHei !important; ">电影</h3>
+					<div class="be-large-post-align"><div class="info-block-right"><a href="more.php?videotype=1"><h3 class="info-block-label" style="font-family:Microsoft YaHei !important; ">更多>></h3></a></div><h3 class="info-block-label" style="font-family:Microsoft YaHei !important; ">电影</h3>
 					</div>
 					</div>
 					<div class="row _post-container_">
@@ -308,21 +308,21 @@ function do_html_col_md_10()
 					</div>
 
 					<div class="s_keywords" id="event">
-					<div class="be-large-post-align"><div class="info-block-right"><a href="more.php?videotype=2"><h3 class="info-block-label" style="font-family:Microsoft YaHei !important; ">more>></h3></a></div><h3 class="info-block-label" style="font-family:Microsoft YaHei !important; ">时事</h3></div>
+					<div class="be-large-post-align"><div class="info-block-right"><a href="more.php?videotype=2"><h3 class="info-block-label" style="font-family:Microsoft YaHei !important; ">更多>></h3></a></div><h3 class="info-block-label" style="font-family:Microsoft YaHei !important; ">时事</h3></div>
 					</div>
 					<div class="row _post-container_">
 					<?php do_html_custom_colomn_5(2);?>	
 					</div>
 
 					<div class="s_keywords"  id="sport"  >
-					<div class="be-large-post-align"><div class="info-block-right"><a href="more.php?videotype=3"><h3 class="info-block-label" style="font-family:Microsoft YaHei !important; ">more>></h3></a></div> <h3 class="info-block-label" style="font-family:Microsoft YaHei !important; ">体育</h3></div>
+					<div class="be-large-post-align"><div class="info-block-right"><a href="more.php?videotype=3"><h3 class="info-block-label" style="font-family:Microsoft YaHei !important; ">更多>></h3></a></div> <h3 class="info-block-label" style="font-family:Microsoft YaHei !important; ">体育</h3></div>
 					</div>
 					<div class="row _post-container_">
 						<?php do_html_custom_colomn_5(3);?>	
 					</div>
 
 					<div class="s_keywords" id="show">
-					<div class="be-large-post-align"><div class="info-block-right"><a href="more.php?videotype=4"><h3 class="info-block-label" style="font-family:Microsoft YaHei !important; ">more>></h3></a></div><h3 class="info-block-label" style="font-family:Microsoft YaHei !important; ">综艺</h3></div>
+					<div class="be-large-post-align"><div class="info-block-right"><a href="more.php?videotype=4"><h3 class="info-block-label" style="font-family:Microsoft YaHei !important; ">更多>></h3></a></div><h3 class="info-block-label" style="font-family:Microsoft YaHei !important; ">综艺</h3></div>
 					</div>
 					<div class="row _post-container_">
 						<?php do_html_custom_colomn_5(4);?>	
@@ -330,21 +330,21 @@ function do_html_col_md_10()
 
 
 					<div class="s_keywords" id="comic">
-					<div class="be-large-post-align"><div class="info-block-right"><a href="more.php?videotype=5"><h3 class="info-block-label" style="font-family:Microsoft YaHei !important; ">more>></h3></a></div><h3 class="info-block-label" style="font-family:Microsoft YaHei !important; ">动漫</h3></div>
+					<div class="be-large-post-align"><div class="info-block-right"><a href="more.php?videotype=5"><h3 class="info-block-label" style="font-family:Microsoft YaHei !important; ">更多>></h3></a></div><h3 class="info-block-label" style="font-family:Microsoft YaHei !important; ">动漫</h3></div>
 					</div>
 					<div class="row _post-container_">
 						<?php do_html_custom_colomn_5(5);?>	
 					</div>
 
 					<div class="s_keywords" id="trip">
-					<div class="be-large-post-align"><div class="info-block-right"><a href="more.php?videotype=6"><h3 class="info-block-label" style="font-family:Microsoft YaHei !important; ">more>></h3></a></div><h3 class="info-block-label" style="font-family:Microsoft YaHei !important; ">旅游</h3></div>
+					<div class="be-large-post-align"><div class="info-block-right"><a href="more.php?videotype=6"><h3 class="info-block-label" style="font-family:Microsoft YaHei !important; ">更多>></h3></a></div><h3 class="info-block-label" style="font-family:Microsoft YaHei !important; ">旅游</h3></div>
 					</div>
 					<div class="row _post-container_">
 						<?php do_html_custom_colomn_5(6);?>	
 					</div>
 
 					<div class="s_keywords" id="music">
-					<div class="be-large-post-align"><div class="info-block-right"><a href="more.php?videotype=7"><h3 class="info-block-label" style="font-family:Microsoft YaHei !important; ">more>></h3></a></div><h3 class="info-block-label" style="font-family:Microsoft YaHei !important; ">音乐</h3></div>
+					<div class="be-large-post-align"><div class="info-block-right"><a href="more.php?videotype=7"><h3 class="info-block-label" style="font-family:Microsoft YaHei !important; ">更多>></h3></a></div><h3 class="info-block-label" style="font-family:Microsoft YaHei !important; ">音乐</h3></div>
 					</div>
 					<div class="row _post-container_">
 						<?php do_html_custom_colomn_5(7);?>
@@ -352,7 +352,7 @@ function do_html_col_md_10()
 <?php	
 }
 
-function do_html_custom_colomn_5($videotype, $maxshow=10, $keyword='')
+function do_html_custom_colomn_5($videotype, $maxshow=4, $keyword='')
 {//显示每个种类的记录
  //查库实现
 	//include('../include/db_fns.php');
@@ -389,8 +389,8 @@ function do_html_custom_colomn_5($videotype, $maxshow=10, $keyword='')
 								 
 								</span>
 								<div class="author-post">
-									<img src="<?php echo getImageLinkByUserid($userid); ?>" alt="" class="ava-author">
-									<span>by <a href="#"><?php echo getUsernameByUserid($userid);?></a></span></br>
+									<a href="user-detail.php?userid=<?php echo ($userid); ?>"><img src="<?php echo getImageLinkByUserid($userid); ?>" " alt="" class="ava-author"></a>
+									<span>by <a href="user-detail.php?userid=<?php echo ($userid); ?>"><?php echo getUsernameByUserid($userid);?></a></span></br>
 									<span style="margin-left: 30px;"><?php echo $uploadtime;?></span>
 								</div>
 								<div class="info-block">
@@ -430,9 +430,9 @@ function do_html_footer()
 				<div class="col-md-12 footer-end clearfix">
 					 
 					<div class="right">
-						<a class="btn color-7 size-2 hover-9">About Us</a>
-						<a class="btn color-7 size-2 hover-9">Help</a>
-						<a class="btn color-7 size-2 hover-9">Privacy Policy</a>
+						<a class="btn color-7 size-2 hover-9">关于我们</a>
+						<a class="btn color-7 size-2 hover-9">帮助</a>
+						<a class="btn color-7 size-2 hover-9">隐私政策</a>
 					</div>
 				</div>			
 			</div>
@@ -563,7 +563,7 @@ function do_html_content_block_upload()
 											<div class="form-group fg_icon focus-2">
 												<div class="form-label">
 													标题</div>
-												<input class="form-input" name="title" type="text">
+												<input class="form-input " name="title" type="text">
 											</div>
 										</div>
 										<div class="input-col col-xs-12">
@@ -580,7 +580,7 @@ function do_html_content_block_upload()
 												<input class="form-input" name="label" type="text" placeholder="">
 											</div>
 										</div>
-										<div class="input-col col-xs-12 col-sm-6">
+										<div class="input-col col-xs-12 col-sm-6 be-custom-select-block">
 											<div class="form-label">
 												类别</div>
 											<select name="type" class="be-custom-select">
@@ -593,7 +593,7 @@ function do_html_content_block_upload()
 												<option value="7">音乐</option>
 											</select>
 										</div>
-										<div class="input-col col-xs-12 col-sm-6">
+										<div class="input-col col-xs-12 col-sm-6 be-custom-select-block" >
 											<div class="form-label">
 												是否原创</div>
 											<select name="original" class="be-custom-select">
@@ -712,7 +712,7 @@ function do_html_content_block_personal($userid)
 									    </td>
 									    <td class="text-center"><strong><?php echo $videotype_array[$info_array[$i]['VIDEOTYPE']];?></strong></td>
 									    <td class="text-center"><strong><?php echo $info_array[$i]['VIDEOLABEL'];?></strong></td>
-									    <td class="text-center"><strong><?php echo $info_array[$i]['VIDEOSTATUS']==1 ? '是':'否';?></strong></td>
+									    <td class="text-center"><strong><?php echo $info_array[$i]['VIDEOSTATUS']==1 ? '通过':'未审';?></strong></td>
 									    <td>
 									 
 									    	<a class="t_project_icon" href="#"><img src="img/delete.png" alt="" onclick="deleteVideo(<?php echo $info_array[$i]['VIDEOID']; ?>)"></a>
@@ -772,7 +772,7 @@ function do_html_content_block_personal($userid)
 									    </td>
 									    <td class="text-center"><strong><?php echo $videotype_array[$info_array[$i]['VIDEOTYPE']];?></strong></td>
 									    <td class="text-center"><strong><?php echo $info_array[$i]['VIDEOLABEL'];?></strong></td>
-									    <td class="text-center"><strong><?php echo $info_array[$i]['VIDEOSTATUS']==1 ? '是':'否';?></strong></td>
+									    <td class="text-center"><strong><?php echo $info_array[$i]['VIDEOSTATUS']==1 ? '通过':'未审';?></strong></td>
 									    <td>
 									 
 									    	<a class="t_project_icon" href="#"><img src="img/delete.png" alt=""  onclick="deleteVideo(<?php echo $info_array[$i]['VIDEOID']; ?>)"></a>
@@ -804,8 +804,8 @@ function do_html_content_block_personal($userid)
 									    <th class="col-xs-1 text-center">
 									    	标签
 									    </th>
-									    <th class="col-xs-1 text-center
-									    	是否通过审核
+									    <th class="col-xs-1 text-center">
+									    	审核状态
 									    </th>
 									    <th class="col-xs-5">操作</th>
 									  </tr>
@@ -828,7 +828,7 @@ function do_html_content_block_personal($userid)
 									    </td>
 									    <td class="text-center"><strong><?php echo $videotype_array[$info_array[$i]['VIDEOTYPE']];?></strong></td>
 									    <td class="text-center"><strong><?php echo $info_array[$i]['VIDEOLABEL'];?></strong></td>
-									    <td class="text-center"><strong><?php echo $info_array[$i]['VIDEOSTATUS']==1 ? '是':'否';?></strong></td>
+									    <td class="text-center"><strong><?php echo $info_array[$i]['VIDEOSTATUS']==1 ? '通过':'未审';?></strong></td>
 									    <td>
 									 
 									    	<a class="t_project_icon" href="#"><img src="img/delete.png" alt="" onclick="deleteVideo(<?php echo $info_array[$i]['VIDEOID']; ?>)"></a>
@@ -861,7 +861,7 @@ function do_html_content_block_personal($userid)
 									    	标签
 									    </th>
 									    <th class="col-xs-1 text-center">
-									    	是否通过审核
+									    	审核状态
 									    </th>
 									    <th class="col-xs-5">操作</th>
 									  </tr>
@@ -885,7 +885,7 @@ function do_html_content_block_personal($userid)
 									    </td>
 									    <td class="text-center"><strong><?php echo $videotype_array[$info_array[$i]['VIDEOTYPE']];?></strong></td>
 									    <td class="text-center"><strong><?php echo $info_array[$i]['VIDEOLABEL'];?></strong></td>
-									    <td class="text-center"><strong><?php echo $info_array[$i]['VIDEOSTATUS']==1 ? '是':'否';?></strong></td>
+									    <td class="text-center"><strong><?php echo $info_array[$i]['VIDEOSTATUS']==1 ? '通过':'未审';?></strong></td>
 									    <td>
 									 
 									    	<a class="t_project_icon" href=""><img src="img/delete.png" alt="" onclick="deleteVideoThoroughly(<?php echo $info_array[$i]['VIDEOID']; ?>)"></a>
@@ -1135,8 +1135,8 @@ function do_html_detail_relative($videoid)
     <div class="row"><!--three times-->
 <?php 
     //
-    $topnum = 3; // 显示多少最多播放的个视频
-	$info_array = select_most_play_video($topnum);
+    $topnum = 3; // 最多显示多少个视频
+	$info_array = select_relative_video_by_videoid($videoid,$topnum);
 	for($i=0; $i<$info_array['count']; $i++)
 	{
 		$videoid = $info_array[$i]['VIDEOID'];
@@ -1204,10 +1204,10 @@ function do_html_detail_comment($videoid)
                 <div class="row">
                   <div class="col-xs-12">
                     <div class="form-group">
-                      <textarea class="form-input" required="" placeholder="Your text" id="comment-content"></textarea>
+                      <textarea class="form-input" required="" placeholder="评论内容" id="comment-content"></textarea>
                     </div>
                   </div>
-                  <a class="btn color-1 size-2 hover-1 pull-right" onclick="comment();">submit</a>
+                  <a class="btn color-1 size-2 hover-1 pull-right" onclick="comment();">提交</a>
                 </div>
               </form>
             </div>
@@ -1233,12 +1233,12 @@ function do_html_detail_hot()
 ?>
         <div class="col-xs-12 col-sm-3">
 			<form action="./search.php" class="input-search" method="GET">
-				<input name="keyword" type="text" required placeholder="Enter keyword">
+				<input name="keyword" type="text" required placeholder="输入关键字">
 					<i class="fa fa-search"></i>
 					<input name="search_submit" type="submit" value="">
 			</form>			
           <div class="be-vidget">
-            <h3 class="letf-menu-article"><br />Navigation</h3>
+            <h3 class="letf-menu-article"><br />导航栏</h3>
             <div class="creative_filds_block">
               <div class="ul">
                 <ul>
@@ -1297,7 +1297,7 @@ function do_html_content_block_more($videotype)
 			<div class="row">
 				<div class="col-md-2 left-feild">
 					<form action="./search.php" class="input-search" method="GET">
-						<input name="keyword" type="text" required placeholder="Enter keyword">
+						<input name="keyword" type="text" required placeholder="输入关键字">
 							<i class="fa fa-search"></i>
 							<input name="search_submit" type="submit" value="">
 					</form>				
@@ -1312,7 +1312,7 @@ function do_html_content_block_more($videotype)
 				<div class="col-md-2 left-feild">
 					<div class="be-vidget">
 						<h3 class="letf-menu-article">
-						<br />Navigation
+						<br />导航栏
 						</h3>
 						<div class="creative_filds_block">
 							<div class="ul">
@@ -1358,7 +1358,7 @@ function do_html_content_block_search($keyword)
 			<div class="row">
 				<div class="col-md-2 left-feild">
 					<form action="./search.php" class="input-search" method="GET">
-						<input name="keyword" type="text" required placeholder="Enter keyword">
+						<input name="keyword" type="text" required placeholder="输入关键字">
 							<i class="fa fa-search"></i>
 							<input name="search_submit" type="submit" value="">
 					</form>				
@@ -1373,7 +1373,7 @@ function do_html_content_block_search($keyword)
 				<div class="col-md-2 left-feild">
 					<div class="be-vidget">
 						<h3 class="letf-menu-article">
-						<br />Navigation
+						<br />导航栏
 						</h3>
 						<div class="creative_filds_block">
 							<div class="ul">
@@ -1407,5 +1407,115 @@ function do_html_content_block_search($keyword)
 
 		</div>
 <?php	
+}
+
+
+function do_html_content_block_user_detail($userid)
+{
+	$user_info_array = select_user_by_userid($userid);
+	$count_all = $user_info_array['count'];
+?>
+	<div id="content-block">
+		<div class="container be-detail-container">
+			<div class="row">
+				<div class="col-xs-12 col-md-4 left-feild">
+					<div class="be-user-block style-3">
+						<div class="be-user-detail">
+							<a class="be-ava-user style-2" href="#">
+								<img height="100" width="100" src="<?php echo getImageLinkByUserid($userid);?>" alt=""> 
+							</a>
+							
+							 
+							<p class="be-use-name"><?php echo getUsernameByUserid($userid);?></p>
+
+					 
+							
+							 
+						</div>
+					 
+					</div>
+					<div class="be-desc-block">
+						<div class="be-desc-author">
+							<div class="be-desc-label">About Me</div>
+							<div class="clearfix"></div>
+							<div class="be-desc-text">
+								<?php echo $user_info_array[0]['USERTEXT']? $user_info_array[0]['USERTEXT']:'该用户没有简介'; ?>
+							</div>
+						</div>					
+					</div>	
+	
+				</div>	
+				<div class="col-xs-12 col-md-8">
+                    <div class="tab-wrapper style-1">
+                        <div class="tab-nav-wrapper">
+                            <div  class="nav-tab  clearfix">
+                                <div class="nav-tab-item active">
+                                    <span>所有视频</span>
+                                </div>                                                   
+                            </div>
+                        </div>
+                        <div class="tabs-content clearfix">
+                            <div class="tab-info active"> 
+
+
+									<div class="be-large-post-align" style="margin:0px;">						
+								<div class="table-responsive">
+								<table class="table table-sotring tablesorter">
+									<thead>
+									  <tr>
+									    <th class="col-xs-4">视频名称</th>
+									    <th class="col-xs-1 text-center">
+									    	分类
+									    </th>
+									    <th class="col-xs-1 text-center">
+									    	标签
+									    </th>
+									    <th class="col-xs-1 text-center">
+									    	审核状态
+									    </th>
+									  </tr>
+									</thead>
+									<tbody>
+										<?php 
+											$info_array = select_video_by_userid($userid,1);
+											$videotype_array = array('未分类','电影','时事','体育','综艺','动漫','旅游','音乐');
+											for($i=0; $i<$info_array['count']; $i++)
+											{	
+										?>
+									  <tr>
+									    <td class="col-xs-4">
+									    	<div class="t_project clearfix">
+									    		<a href="video-detail-2.php?videoid=<?php echo $info_array[$i]['VIDEOID']; ?>"><img class="t_project-img" src="<?php echo  $info_array[$i]['IMAGELINK'];?>" alt=""></a>
+									    		<div class="t_project-desc">
+									    			<a class="t_project-title" href="video-detail-2.php?videoid=<?php echo $info_array[$i]['VIDEOID']; ?>"><?php echo $info_array[$i]['VIDEONAME'];?></a>
+									    			<div class="t_project-date"><i class="fa fa-clock-o"></i> <?php echo $info_array[$i]['UPLOADTIME'];?></div>
+									    		</div>
+									    	</div>
+									    </td>
+									    <td class="text-center"><strong><?php echo $videotype_array[$info_array[$i]['VIDEOTYPE']];?></strong></td>
+									    <td class="text-center"><strong><?php echo $info_array[$i]['VIDEOLABEL'];?></strong></td>
+									    <td class="text-center"><strong><?php echo $info_array[$i]['VIDEOSTATUS']==1 ? '通过':'未审';?></strong></td>
+									  </tr>
+										<?php
+											}
+										?>
+									</tbody>
+								</table>
+								</div>	
+								 	</br>
+							<div class="col-sm-3" style="float: right;">	
+							<div class="swiper-arrow-left type-1 be-out" ></div>
+				             <div class="swiper-arrow-right type-1 be-out"></div></div>
+							</div>
+                         	</div>
+                        </div>
+                    </div> 				
+				</div>				
+			</div>
+		</div>
+	</div>
+
+<?php
+
 }
 ?>

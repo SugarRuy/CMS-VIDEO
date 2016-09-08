@@ -19,7 +19,7 @@ if(verify_password($username, $password))
 	go_to_new_page('author-login.php');
 }else{
 	js_alert('登录失败');
-	go_to_error_page();
+	go_to_new_page('author-login.php');
 }
 
 ?>

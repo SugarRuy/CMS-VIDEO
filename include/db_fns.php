@@ -317,29 +317,26 @@ function select_comment_by_videoid($videoid, $commentstatus=1)
 
 function select_video_by_keyword($keyword, $videostatus = '')
 {
-	$conn = db_connect();
-	if(!$conn)
-	{//数据库链接失败
-		$conn->close();
-		return false;
-	}
-	else
-	{
-		if($videostatus !=''){
-			$_query = "select * from video_table where VIDEONAME LIKE '%$keyword%' or VIDEOTEXT LIKE '%$keyword%' or VIDEOLABEL LIKE '%$keyword%' and VIDEOSTATUS=$videostatus;";
-		}else{
-			$_query = "select * from video_table where VIDEOTYPE=$videotype;";
-			}
-		$result = @$conn->query($_query);
-		$num_result = @$result->num_rows;
-	}
-	$result = @db_result_to_array($result);
-	$result['count'] = is_null($num_result)?0:$num_result;
-	$conn->close();
 
-	return $result;
+	if($videostatus !=''){
+		$_query = "select * from video_table where VIDEONAME LIKE '%$keyword%' or VIDEOTEXT LIKE '%$keyword%' or VIDEOLABEL LIKE '%$keyword%' and VIDEOSTATUS=$videostatus;";
+	}else{
+		$_query = "select * from video_table where VIDEOTYPE=$videotype;";
+		}
+
+
+	return db_query($_query);
 	//
 	//return true;
+}
+function select_relative_video_by_videoid($videoid,$topnum)
+{
+	$_query = "select * from video_table where (VIDEOTYPE=(select VIDEOTYPE from video_table where VIDEOID=$videoid) and VIDEOID!=$videoid) limit $topnum;";
+	$result = db_query($_query);
+	if($result['count'] >= 3)
+		return $result;
+	else
+		return select_most_play_video($topnum);
 }
 
 //以下三个函数均未做测试

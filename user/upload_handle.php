@@ -24,13 +24,14 @@ $original = (isset($_POST['original'])) ? $_POST['original'] :'';
 
 
 //处理视频文件
-if(!isset($_POST['video']) 
-|| !isset($_POST['picture'])
+if( empty($_FILES["picture"]["tmp_name"])
+|| empty($_FILES["video"]["tmp_name"])
 || !isset($_POST['title'])
 || !isset($_POST['type']))
 {
 	js_alert('字段不完整');
 	go_to_new_page('upload.php');
+	exit();
 	//go_to_not_enough_post_page();
 }
 
@@ -66,6 +67,6 @@ $info_array['imglink'] = $new_img_path;
 $info_array['userid'] = $userid;
 insert_new_video($info_array);
 
-//go_to_new_page('./upload.php');
+go_to_new_page('./upload.php');
 
 ?>
