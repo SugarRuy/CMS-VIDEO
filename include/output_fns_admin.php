@@ -78,7 +78,7 @@ function do_html_topbar_admin($adminname)
 				<!-- theme selector starts -->
 				<div class="btn-group pull-right theme-container" >
 					<a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
-						<i class="icon-tint"></i><span class="hidden-phone"> Change Theme / Skin</span>
+						<i class="icon-tint"></i><span class="hidden-phone"> 界面风格选择</span>
 						<span class="caret"></span>
 					</a>
 					<ul class="dropdown-menu" id="themes">
@@ -111,7 +111,7 @@ function do_html_topbar_admin($adminname)
 				
 				<div class="top-nav nav-collapse">
 					<ul class="nav">
-						<li><a href="#">Visit Site</a></li>
+						<li><a href="./review.php">回到主页</a></li>
 						<li>
 							<form class="navbar-search pull-left">
 								<input placeholder="Search" class="search-query span2" name="query" type="text">
@@ -147,7 +147,7 @@ function do_html_left_menu_admin()
 					 
 						<li><a href="login.html" onclick="Logout();"><i class="icon-lock"></i><span class="hidden-tablet"> 登出</span></a></li>
 					</ul>
-					<label id="for-is-ajax" class="hidden-tablet" for="is-ajax"><input id="is-ajax" type="checkbox"> Ajax on menu</label>
+					<label id="for-is-ajax" class="hidden-tablet" for="is-ajax"><input id="is-ajax" type="checkbox"> 启用AJAX技术</label>
 				</div><!--/.well -->
 			</div><!--/span-->
 			<!-- left menu ends -->
@@ -178,7 +178,7 @@ function do_html_footer_admin()
 				
 		<hr>
 		<footer>
-			<p class="pull-left">&copy; <a href="http://usman.it" target="_blank">Muhammad Usman</a> 2012</p>
+			<p class="pull-left">&copy;项目地址:  <a href="https://github.com/SugarRuy/CMS-VIDEO" target="_blank">https://github.com/SugarRuy/CMS-VIDEO</a></p>
 			<p class="pull-right">Powered by: <a href="http://usman.it/free-responsive-admin-template">Charisma</a></p>
 		</footer>
 		

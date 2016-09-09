@@ -4,7 +4,7 @@ include('../include/sc_fns.php');
 @session_start();
 $videotype = isset($_GET['videotype'])? $_GET['videotype']:1;
 
-do_html_title('more video');
+do_html_title('更多');
 
 if(isset($_SESSION['username'])){
 	do_html_login_header($_SESSION['username']);

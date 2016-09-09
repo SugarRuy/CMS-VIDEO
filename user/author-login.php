@@ -9,7 +9,7 @@ if(!isset($_SESSION['username']))
 $userid = $_SESSION['userid'];
 $user_info_array = select_user_by_userid($userid);
 
-do_html_title('PERSONAL CENTER');
+do_html_title('个人中心');
 
 if(isset($_SESSION['username'])){
 	do_html_login_header($_SESSION['username']);

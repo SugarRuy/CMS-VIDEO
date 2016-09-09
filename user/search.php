@@ -4,7 +4,7 @@ include('../include/sc_fns.php');
 @session_start();
 $keyword = isset($_GET['keyword'])? $_GET['keyword']:'';
 
-do_html_title('Search Result');
+do_html_title('搜索结果');
 
 if(isset($_SESSION['username'])){
 	do_html_login_header($_SESSION['username']);

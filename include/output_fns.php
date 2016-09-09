@@ -430,9 +430,9 @@ function do_html_footer()
 				<div class="col-md-12 footer-end clearfix">
 					 
 					<div class="right">
-						<a class="btn color-7 size-2 hover-9">关于我们</a>
-						<a class="btn color-7 size-2 hover-9">帮助</a>
-						<a class="btn color-7 size-2 hover-9">隐私政策</a>
+						<a herf="https://github.com/SugarRuy/CMS-VIDEO" class="btn color-7 size-2 hover-9" onclick="window.location.href='https://github.com/SugarRuy/CMS-VIDEO'">关于我们</a>
+						<a herf="https://github.com/SugarRuy/CMS-VIDEO" class="btn color-7 size-2 hover-9" onclick="window.location.href='https://github.com/SugarRuy/CMS-VIDEO'">帮助</a>
+						<a herf="https://github.com/SugarRuy/CMS-VIDEO" class="btn color-7 size-2 hover-9" onclick="window.location.href='https://github.com/SugarRuy/CMS-VIDEO'">隐私政策</a>
 					</div>
 				</div>			
 			</div>
@@ -962,7 +962,7 @@ function do_html_content_block_personal_edit()
                     </div>
                     <div class="be-vidget hidden-xs hidden-sm" id="scrollspy">
                         <h3 class="letf-menu-article">
-                            Choose Category
+                            导航栏
                         </h3>
                         <div class="creative_filds_block">
                             <ul class="ul nav">

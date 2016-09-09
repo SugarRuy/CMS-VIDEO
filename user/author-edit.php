@@ -7,7 +7,7 @@ if(!isset($_SESSION['username']))
 	go_to_new_page('index.php');
 }
 
-do_html_title('PERSONAL CENTER');
+do_html_title('修改信息');
 
 if(isset($_SESSION['username'])){
 	do_html_login_header($_SESSION['username']);
