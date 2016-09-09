@@ -2,7 +2,11 @@
 include('../include/sc_fns.php');
 //包含titie
 @session_start();
-
+if(!isset($_SESSION['username'])) // 未登录
+{
+	go_to_new_page('index.php');
+	eixt();
+}
 do_html_title('上传视频');
 
 if(isset($_SESSION['username'])){

@@ -3,8 +3,10 @@ include('../include/sc_fns.php');
 //print_r($_FILES);
 
 @session_start();
-if(!isset($_SESSION['username'])) // 用户名未
+if(!isset($_SESSION['username'])) // 未登录
 {
+	go_to_new_page('index.php');
+	eixt();
 	//go_to_no_login_page();
 }
 

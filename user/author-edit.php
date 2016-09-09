@@ -5,6 +5,7 @@ include('../include/sc_fns.php');
 if(!isset($_SESSION['username']))
 {
 	go_to_new_page('index.php');
+	exit();
 }
 
 do_html_title('修改信息');

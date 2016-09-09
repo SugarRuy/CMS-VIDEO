@@ -5,6 +5,7 @@ if(!isset($_POST['username']) ||
 	!isset($_POST['password']))
 {
 	go_to_not_enough_post_page();
+	exit();
 }
 
 $username = $_POST['username'];

@@ -5,6 +5,7 @@ include('../include/sc_fns.php');
 if(!isset($_SESSION['username']))
 {
 	go_to_new_page('index.php');
+	exit();
 }
 $userid = $_SESSION['userid'];
 $user_info_array = select_user_by_userid($userid);
